@@ -30,7 +30,7 @@ function Identity (){
                 </h2>
                 <p className="p-4 md:p-0 leading-10 text-xl">
                     Lorem Ipsum is simply dummy text of the printing and  
-                    industry. Lorem Ipsum has been the industry's standard 
+                    industry. Lorem Ipsum has been the industry s standard 
                     text ever since the 1500s, when an unknown printer took
                     of type and scrambled it to make a type specimen book.
                 </p>

@@ -1,11 +1,10 @@
 'use client';
 import React, { useEffect, useState, useRef } from "react";
-import { motion, MotionProps } from "framer-motion";
+import { motion } from "framer-motion";
 import Header from '../app/components/Header';
 import HeroSection from "../app/components/HeroSection";
 import Services from "../app/components/Services";
 import Partnership from "../app/components/Partnership";
-import Testimonials from "../app/components/Testimonials";
 import Promise from "../app/components/Promise";
 import ContactForm from "./components/CTAContact";
 import Footer from "../app/components/Footer";

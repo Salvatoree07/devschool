@@ -6,8 +6,6 @@ import BlogCardSmall from "./BlogCardSmall";
 import NavigationBlog from "./NavigationBlog";
 import { useState } from "react";
 import { supabase } from "../clientSupabase";
-
-
 type Props = {
   id_post: number;
   titolo: string;
@@ -49,10 +47,10 @@ function NavigationClient(props: Propriety) {
   };
 
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault(); // Previene il comportamento predefinito del form
-    const prova= searching(searchTerm); // Chiama la funzione di ricerca con il termine
-  };
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault(); // Previene il comportamento predefinito del form
+  //   const prova= searching(searchTerm); // Chiama la funzione di ricerca con il termine
+  // };
 
   const displayedPosts = searchResults.length > 0 ? searchResults : props.data; // Mostra i risultati o i dati originali
 

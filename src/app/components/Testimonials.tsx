@@ -11,7 +11,7 @@ function Testimonials(){
                 {/* background img */}
                 <div className="foto px-10 pb-16">
                     <img src="/img/photo-face.png" alt="" className="profiloImg" />
-                    <p className="leading-8 mt-4 mb-7">Working with the PETRONG team has been a huge success! They're
+                    <p className="leading-8 mt-4 mb-7">Working with the PETRONG team has been a huge success! They re
                     good people who care deeply about our business!</p>
                     <p className="font-bold">John Doe</p>
                     <div className="flex justify-between">

@@ -1,6 +1,6 @@
 
 import React from "react";
-import heroImg from "../../../public/img/intro-img.png"
+
 import Button from "./Button";
 
 

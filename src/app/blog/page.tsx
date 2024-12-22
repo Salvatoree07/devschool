@@ -29,7 +29,7 @@ async function recuperoPost(): Promise<Post[]> {
 }
 
  async function Blog(){
-    let dati = await recuperoPost();
+    const dati = await recuperoPost();
     return (
         <div>
             <Header />
