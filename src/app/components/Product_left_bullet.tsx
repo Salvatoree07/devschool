@@ -6,7 +6,7 @@ function Product_left_bullet(){
             <div className="max-w-[700px]">
                 <p className="text-2xl text-gray-600 mb-6">01</p>
                 <h2 className="text-4xl mb-6 font-bold text-blue-950">Digital Product Design.</h2>
-                <p className="text-md  leading-9 text-[#262626]">The best software has both a strong back-end and a good front-end. We've got the tools and expertise to assist you in creating an intuitive and engaging user experience that your customers will love and your rivals will envy. Our UX/UI Design. Services include
+                <p className="text-md  leading-9 text-[#262626]">The best software has both a strong back-end and a good front-end. We have got the tools and expertise to assist you in creating an intuitive and engaging user experience that your customers will love and your rivals will envy. Our UX/UI Design. Services include
                 </p>
                 <ul className="list-disc marker:text-green-500 marker:text-3xl relative left-6">
                         <li>Design Workshops</li>

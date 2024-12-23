@@ -20,8 +20,8 @@ type Propriety = {
 };
 
 function NavigationClient(props: Propriety) {
-  const [searchResults, setSearchResults] = useState<Props[]>([]);
-  const [searchTerm, setSearchTerm] = useState(''); // Stato per il termine di ricerca
+  // const [searchResults, setSearchResults] = useState<Props[]>([]);
+  // const [searchTerm, setSearchTerm] = useState(''); // Stato per il termine di ricerca
 
   const searching = async (searchTerm: string): Promise<Props[]> => {
     try {
@@ -52,7 +52,7 @@ function NavigationClient(props: Propriety) {
   //   const prova= searching(searchTerm); // Chiama la funzione di ricerca con il termine
   // };
 
-  const displayedPosts = searchResults.length > 0 ? searchResults : props.data; // Mostra i risultati o i dati originali
+  // const displayedPosts = searchResults.length > 0 ? searchResults : props.data; // Mostra i risultati o i dati originali
 
   return (
     <div>
@@ -61,7 +61,7 @@ function NavigationClient(props: Propriety) {
 
       <div className="flex flex-col lg:flex-row lg:space-x-24 justify-center">
         <div className="flex flex-row flex-wrap justify-center ">
-          {displayedPosts.map((post: Props) => (
+          {props.data.map((post: Props) => (
             <BlogCardBig
               key={post.id_post}
               title={post.titolo}

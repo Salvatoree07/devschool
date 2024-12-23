@@ -14,7 +14,7 @@ function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activePage, setActivePage]=useState("");
 
-    const handleClick = (page:string, event: React.MouseEvent<HTMLAnchorElement>) => {
+    const handleClick = (page:string) => {
     //event.preventDefault(); // Evita il refresh della pagina
     setActivePage(page); // Imposta la pagina attiva
     //window.history.pushState({}, '', page);
@@ -39,12 +39,12 @@ function Header() {
             </button>
             </div>
             <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-            <Link href="/about" className={`text-sm/6 font-semibold  item-menu ${activePage==='about' ? 'text-green-500':'text-white'}`} onClick={(e)=>{handleClick("about", e)}}>About</Link> 
-            <Link href="/portfolio" className={`text-sm/6 font-semibold  item-menu ${activePage==='portfolio' ? 'text-green-500':'text-white'}`} onClick={(e)=>{handleClick("portfolio", e)}}>Portfolio</Link> 
-            <Link href="/product" className={`text-sm/6 font-semibold  item-menu ${activePage==='product' ? 'text-green-500':'text-white'}`} onClick={(e)=>{handleClick("product", e)}}>Product</Link> 
-            <Link href="/expertise" className={`text-sm/6 font-semibold  item-menu ${activePage==='expertise' ? 'text-green-500':'text-white'}`} onClick={(e)=>{handleClick("expertise", e)}}>Expertise</Link> 
-            <Link href="/contact" className={`text-sm/6 font-semibold  item-menu ${activePage==='contact' ? 'text-green-500':'text-white'}`} onClick={(e)=>{handleClick("contact", e)}}>Contact</Link> 
-            <Link href="/blog" className={`text-sm/6 font-semibold  item-menu ${activePage==='blog' ? 'text-green-500':'text-white'}`} onClick={(e)=>{handleClick("blog", e)}}>Blog</Link> 
+            <Link href="/about" className={`text-sm/6 font-semibold  item-menu ${activePage==='about' ? 'text-green-500':'text-white'}`} onClick={()=>{handleClick("about")}}>About</Link> 
+            <Link href="/portfolio" className={`text-sm/6 font-semibold  item-menu ${activePage==='portfolio' ? 'text-green-500':'text-white'}`} onClick={()=>{handleClick("portfolio")}}>Portfolio</Link> 
+            <Link href="/product" className={`text-sm/6 font-semibold  item-menu ${activePage==='product' ? 'text-green-500':'text-white'}`} onClick={()=>{handleClick("product")}}>Product</Link> 
+            <Link href="/expertise" className={`text-sm/6 font-semibold  item-menu ${activePage==='expertise' ? 'text-green-500':'text-white'}`} onClick={()=>{handleClick("expertise")}}>Expertise</Link> 
+            <Link href="/contact" className={`text-sm/6 font-semibold  item-menu ${activePage==='contact' ? 'text-green-500':'text-white'}`} onClick={()=>{handleClick("contact")}}>Contact</Link> 
+            <Link href="/blog" className={`text-sm/6 font-semibold  item-menu ${activePage==='blog' ? 'text-green-500':'text-white'}`} onClick={()=>{handleClick("blog")}}>Blog</Link> 
 
             </PopoverGroup>
         </nav>
