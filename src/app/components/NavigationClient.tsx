@@ -4,7 +4,7 @@ import ContactForm from "./CTAContact";
 import BlogCardBig from "./BlogCardBig";
 import BlogCardSmall from "./BlogCardSmall";
 import NavigationBlog from "./NavigationBlog";
-import { useState } from "react";
+// import { useState } from "react";
 import { supabase } from "../clientSupabase";
 type Props = {
   id_post: number;
