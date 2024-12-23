@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 function Identity (){
     return (
         <div className="bg-green-50 bg-[url('/img/line-twisted.png')] bg-no-repeat">
@@ -7,8 +7,9 @@ function Identity (){
         <div className="flex flex-col container mx-auto py-20 md:flex-row md:space-x-12">
             <div className="flex relative mx-auto md:justify-end md:w-1/2 ">
                 <div className="relative">
+                    <Image src={"/img/about-hero.png"} alt="Prova" width={500} height={700} className="p-4 md:p-0 relative z-10"/>
                     <img src="./img/rectangle.png" alt="" className="absolute w-32 h-32  -left-5 z-0 -bottom-6"/>
-                    <img src="./img/about-hero.png" alt="" className=" p-4 md:p-0 relative z-10" />
+                    {/* <img src="./img/about-hero.png" alt="" className=" p-4 md:p-0 relative z-10" /> */}
                     <div className="hidden md:block absolute bg-white rounded-xl p-4 text-sm -bottom-10 -right-10 z-40 h-40 w-80 ">
                         <p className="text-gray-500 ">
                             We want to build a world where great ideas, 
